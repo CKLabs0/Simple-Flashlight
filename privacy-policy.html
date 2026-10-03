@@ -3,23 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy & Terms of Service - Flashlight</title>
+    <title>Privacy Policy - Flashlight</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; color: #333; max-width: 800px; margin: auto; }
-        h2 { color: #000; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: var(--accent);
+            font-size: 2rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 12px;
+        }
+
+        h2 {
+            color: var(--accent);
+            font-size: 1.25rem;
+            margin-top: 24px;
+        }
+
+        p, li {
+            color: var(--text-main);
+            font-size: 0.95rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .updated-date {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+        }
+
+        .warning-box {
+            background-color: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #ef4444;
+            padding: 12px 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Flashlight Legal Information</h1>
-    <p>Last updated: September 5, 2026</p>
 
-    <h2>Privacy Policy</h2>
-    <p>Flashlight uses Google AdMob for advertising. Google may collect device identifiers (such as Advertising ID) to provide personalized ads. We do not store any personal data on our own servers. Camera permission is used solely to control the device's flashlight (LED).</p>
+<div class="container">
+    <h1>Privacy Policy &amp; Terms</h1>
+    <div class="updated-date">Last updated: October 03, 2026</div>
 
-    <h2>Terms of Service & Disclaimer</h2>
-    <p>This application is provided "as is" without any warranties. The developer is not responsible for any damages, battery drain, or hardware issues resulting from the use of this app. Use the strobe and SOS features responsibly.</p>
+    <p>This Privacy Policy governs your use of the <strong>Flashlight</strong> mobile application ("Application") created by the developer. We respect your privacy and are committed to protecting any information processed through our Application.</p>
 
-    <h2>Licenses</h2>
-    <p>This app uses Android Jetpack, Google Play Services, and Material Design components, which are licensed under the Apache License 2.0.</p>
+    <h2>1. Information Collection &amp; Use</h2>
+    <ul>
+        <li><strong>Camera &amp; Flashlight Permission (<code>android.permission.CAMERA</code>):</strong> Required strictly to access and control your device's physical camera LED flash hardware. We do <strong>NOT</strong> record, capture, store, or transmit any photos, videos, or camera feeds.</li>
+        <li><strong>Google AdMob Advertising:</strong> This Application uses Google AdMob to display advertisements. AdMob may collect device identifiers (such as Android Advertising ID), IP address, and technical diagnostic logs to serve personalized or non-personalized ads. For details, please visit <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy &amp; Terms</a>.</li>
+        <li><strong>Consent Management (Google UMP):</strong> Users in applicable regions (such as the European Economic Area and UK) can review, modify, or revoke their privacy consent preferences at any time via the in-app "Consent Settings" button.</li>
+    </ul>
+
+    <h2>2. Local Data Retention</h2>
+    <p>User preferences (including light/dark theme selection, screen strobe speed, and flashlight brightness level) are stored exclusively on your device using Android <code>SharedPreferences</code>. No personal user data or telemetry is ever uploaded or synced to external servers.</p>
+
+    <h2>3. Health &amp; Safety Warning</h2>
+    <div class="warning-box">
+        <strong>Photosensitive Epilepsy Warning:</strong> This Application contains rapid flashing light, strobe, and emergency screen signal modes. Flashing lights may trigger epileptic seizures or discomfort in individuals with photosensitive epilepsy. Please use with caution and avoid looking directly at the LED flash or high-brightness screen.
+    </div>
+
+    <h2>4. Terms of Service &amp; Disclaimer</h2>
+    <p>This Application is provided on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis without warranties of any kind, express or implied. The developer shall not be held liable for any damages, battery consumption, LED hardware wear, or indirect consequences resulting from the use of this software.</p>
+
+    <h2>5. Third-Party Services &amp; Licenses</h2>
+    <p>This software is built using open-source libraries and SDKs, including:</p>
+    <ul>
+        <li>Android Jetpack &amp; Material Components (Apache License 2.0)</li>
+        <li>Google Play Services &amp; Google Mobile Ads SDK</li>
+        <li>Google User Messaging Platform (UMP)</li>
+    </ul>
+
+    <h2>6. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. Changes are effective immediately after they are posted on this page.</p>
+
+    <footer>
+        &copy; 2026 Flashlight App. All rights reserved.
+    </footer>
+</div>
+
 </body>
 </html>
